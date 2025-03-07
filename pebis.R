@@ -7,7 +7,7 @@ add_numbers <- function(a, b) {
 }
 
 main <- function() {
-  read_file("D:\\Bored\\frieren2.jpeg")
+  read_file("D:\\Bored\\frieren3.jpg")
 }
 
 read_file <- function(path) {

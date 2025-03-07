@@ -16,18 +16,11 @@ read_file <- function(path) {
   img <- load.image(path)
   width <- dim(img)[1]
   height <- dim(img)[2]
-  print(width)
-  print(height)
   gray_img <- grayscale(img)
-  roi <- imsub(gray_img, x %in% 0:1000, y %in% 0:1080)
-  # print(roi)
-  print(dim(roi))
   
-  # plot(roi)
-  
-  ASCII_WIDTH = 350
+  ASCII_WIDTH = 150
   ASCII_HEIGHT = floor((ASCII_WIDTH/width) * (height/2))
-  print(ASCII_HEIGHT)
+  # print(ASCII_HEIGHT)
   create_ascii(width, height, ASCII_WIDTH, ASCII_HEIGHT, gray_img)
 
 }
